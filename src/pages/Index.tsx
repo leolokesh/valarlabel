@@ -1,7 +1,8 @@
 
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
-import ProductGrid from '@/components/ProductGrid';
+import BrandStory from '@/components/BrandStory';
+import BrandShowcase from '@/components/BrandShowcase';
 import FeaturesSection from '@/components/FeaturesSection';
 import Footer from '@/components/Footer';
 
@@ -10,7 +11,8 @@ const Index = () => {
     <div className="min-h-screen bg-black text-white">
       <Navigation />
       <HeroSection />
-      <ProductGrid />
+      <BrandStory />
+      <BrandShowcase />
       <FeaturesSection />
       <Footer />
     </div>

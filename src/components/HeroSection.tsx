@@ -1,5 +1,5 @@
 
-import { ArrowRight, Star } from 'lucide-react';
+import { ArrowRight, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
@@ -14,111 +14,94 @@ const HeroSection = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left side - Content */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+          {/* Left side - Brand Story */}
           <div className="space-y-8 animate-fade-in">
-            <div className="space-y-4">
-              <div className="flex items-center space-x-2 text-teal-400">
-                <Star className="h-5 w-5 fill-current" />
-                <span className="text-sm font-medium">NEW COLLECTION</span>
+            <div className="space-y-6">
+              <div className="flex items-center space-x-3">
+                <div className="w-12 h-0.5 bg-gradient-to-r from-teal-400 to-coral-400"></div>
+                <span className="text-teal-400 font-medium tracking-wider">HERITAGE REIMAGINED</span>
               </div>
               
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-6xl lg:text-8xl font-bold leading-tight">
+                EMBRACE
+                <br />
                 YOUR
                 <br />
-                <span className="gradient-text">FUSION</span>
-                <br />
-                STORY
+                <span className="gradient-text">AURA</span>
               </h1>
               
-              <p className="text-lg text-gray-300 max-w-md">
-                Discover the perfect blend of traditional elegance and contemporary style. 
-                Each piece tells a story of heritage reimagined for the modern woman.
+              <p className="text-xl text-gray-300 max-w-lg leading-relaxed">
+                Where timeless traditions meet contemporary spirit. Every thread tells 
+                a story of empowerment, every design celebrates the modern woman's journey.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-6">
               <Button 
                 size="lg" 
-                className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-3 text-lg group"
+                className="bg-transparent border-2 border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-black px-8 py-4 text-lg group transition-all duration-300"
               >
-                SHOP NOW
+                DISCOVER THE STORY
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               
               <Button 
-                variant="outline" 
+                variant="ghost" 
                 size="lg" 
-                className="border-white/20 text-white hover:bg-white/10 px-8 py-3 text-lg"
+                className="text-white hover:text-teal-400 px-8 py-4 text-lg group"
               >
-                EXPLORE COLLECTION
+                <Play className="mr-2 h-5 w-5" />
+                WATCH FILM
               </Button>
             </div>
 
-            {/* Stats */}
-            <div className="flex space-x-8 pt-8">
+            {/* Brand Values */}
+            <div className="flex space-x-12 pt-8">
               <div>
-                <div className="text-2xl font-bold text-teal-400">500+</div>
-                <div className="text-sm text-gray-400">Unique Designs</div>
+                <div className="text-3xl font-bold text-teal-400">15+</div>
+                <div className="text-sm text-gray-400 uppercase tracking-wide">Years Crafting</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-coral-400">10K+</div>
-                <div className="text-sm text-gray-400">Happy Customers</div>
+                <div className="text-3xl font-bold text-coral-400">1000+</div>
+                <div className="text-sm text-gray-400 uppercase tracking-wide">Stories Told</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-teal-400">4.9★</div>
-                <div className="text-sm text-gray-400">Customer Rating</div>
+                <div className="text-3xl font-bold text-teal-400">∞</div>
+                <div className="text-sm text-gray-400 uppercase tracking-wide">Possibilities</div>
               </div>
             </div>
           </div>
 
-          {/* Right side - Featured Product */}
+          {/* Right side - Dynamic Visual */}
           <div className="relative animate-slide-in-right">
-            <div className="relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 shadow-2xl">
-              {/* Product showcase */}
-              <div className="space-y-6">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h3 className="text-xl font-semibold text-white">Ethereal Fusion</h3>
-                    <p className="text-gray-400">Indo-Western Kurta Set</p>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-2xl font-bold text-teal-400">₹2,999</div>
-                    <div className="text-sm text-gray-400 line-through">₹4,999</div>
+            <div className="relative">
+              {/* Main showcase area */}
+              <div className="aspect-[4/5] bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-3xl overflow-hidden relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-teal-600/20 to-coral-600/20">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center space-y-4">
+                      <div className="w-32 h-32 bg-gradient-to-br from-teal-400 to-coral-400 rounded-full mx-auto opacity-60 animate-pulse"></div>
+                      <p className="text-white text-xl font-light">The Future of Fusion</p>
+                    </div>
                   </div>
                 </div>
-
-                {/* Mock product image area */}
-                <div className="aspect-square bg-gradient-to-br from-teal-600/20 to-coral-600/20 rounded-2xl flex items-center justify-center">
-                  <div className="text-center space-y-2">
-                    <div className="w-20 h-20 bg-gradient-to-br from-teal-400 to-coral-400 rounded-full mx-auto opacity-60"></div>
-                    <p className="text-gray-400 text-sm">Featured Design</p>
-                  </div>
+                
+                {/* Floating elements */}
+                <div className="absolute top-8 right-8 bg-white/10 backdrop-blur-md rounded-2xl p-4">
+                  <div className="text-white text-sm font-medium">TRENDING NOW</div>
+                  <div className="text-teal-400 text-lg font-bold">Neo-Traditional</div>
                 </div>
-
-                {/* Size selection */}
-                <div className="space-y-3">
-                  <p className="text-white font-medium">SIZE</p>
-                  <div className="flex space-x-3">
-                    {['S', 'M', 'L', 'XL'].map((size) => (
-                      <button
-                        key={size}
-                        className="w-12 h-12 border border-gray-600 rounded-lg text-white hover:border-teal-400 hover:text-teal-400 transition-colors"
-                      >
-                        {size}
-                      </button>
-                    ))}
-                  </div>
+                
+                <div className="absolute bottom-8 left-8 bg-white/10 backdrop-blur-md rounded-2xl p-4">
+                  <div className="text-white text-sm font-medium">COLLECTION 2024</div>
+                  <div className="text-coral-400 text-lg font-bold">Ethereal Dreams</div>
                 </div>
-
-                <Button className="w-full bg-teal-500 hover:bg-teal-600 text-white py-3">
-                  ADD TO CART
-                </Button>
               </div>
 
               {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-coral-500 to-coral-600 rounded-full opacity-20 blur-xl"></div>
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full opacity-20 blur-xl"></div>
+              <div className="absolute -top-8 -right-8 w-32 h-32 bg-gradient-to-br from-coral-500 to-coral-600 rounded-full opacity-20 blur-xl animate-pulse"></div>
+              <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full opacity-20 blur-xl animate-pulse"></div>
             </div>
           </div>
         </div>
