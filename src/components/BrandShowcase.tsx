@@ -9,7 +9,7 @@ const BrandShowcase = () => {
       title: "Heritage Redefined",
       subtitle: "Where tradition meets tomorrow",
       description: "Ancient weaving techniques reimagined for the contemporary woman who honors her roots while embracing the future.",
-      image: "bg-gradient-to-br from-purple-600/40 to-pink-600/40",
+      image: "bg-gradient-to-br from-purple-600/40 to-plum-600/40",
       year: "2024"
     },
     {
@@ -17,7 +17,7 @@ const BrandShowcase = () => {
       title: "Urban Elegance",
       subtitle: "City lights, timeless nights",
       description: "For the woman who navigates boardrooms by day and art galleries by night. Sophistication with an edge.",
-      image: "bg-gradient-to-br from-blue-600/40 to-cyan-600/40",
+      image: "bg-gradient-to-br from-plum-600/40 to-purple-600/40",
       year: "2024"
     },
     {
@@ -25,7 +25,7 @@ const BrandShowcase = () => {
       title: "Festival Dreams",
       subtitle: "Celebrate in style",
       description: "Every celebration deserves a masterpiece. Designs that capture joy, tradition, and the magic of special moments.",
-      image: "bg-gradient-to-br from-green-600/40 to-teal-600/40",
+      image: "bg-gradient-to-br from-purple-700/40 to-plum-700/40",
       year: "2024"
     }
   ];
@@ -36,9 +36,9 @@ const BrandShowcase = () => {
         {/* Section Header */}
         <div className="text-center mb-20 animate-fade-in">
           <div className="flex items-center justify-center space-x-3 mb-6">
-            <div className="w-12 h-0.5 bg-gradient-to-r from-teal-400 to-coral-400"></div>
-            <span className="text-teal-400 font-medium tracking-wider">COLLECTIONS</span>
-            <div className="w-12 h-0.5 bg-gradient-to-r from-coral-400 to-teal-400"></div>
+            <div className="w-12 h-0.5 bg-gradient-to-r from-purple-400 to-plum-400"></div>
+            <span className="text-purple-400 font-medium tracking-wider">COLLECTIONS</span>
+            <div className="w-12 h-0.5 bg-gradient-to-r from-plum-400 to-purple-400"></div>
           </div>
           <h2 className="text-5xl lg:text-6xl font-bold mb-6">
             Stories in <span className="gradient-text">Motion</span>
@@ -67,7 +67,7 @@ const BrandShowcase = () => {
               >
                 <div className="space-y-4">
                   <div className="flex items-center space-x-4">
-                    <span className="text-coral-400 font-mono text-sm">{collection.year}</span>
+                    <span className="text-plum-400 font-mono text-sm">{collection.year}</span>
                     <div className="w-8 h-px bg-gray-600"></div>
                   </div>
                   
@@ -75,7 +75,7 @@ const BrandShowcase = () => {
                     {collection.title}
                   </h3>
                   
-                  <p className="text-teal-400 text-xl font-light">
+                  <p className="text-purple-400 text-xl font-light">
                     {collection.subtitle}
                   </p>
                   
@@ -86,7 +86,7 @@ const BrandShowcase = () => {
 
                 <Button 
                   variant="ghost" 
-                  className="text-white hover:text-teal-400 px-0 text-lg group"
+                  className="text-white hover:text-purple-400 px-0 text-lg group"
                 >
                   EXPLORE COLLECTION
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -115,7 +115,7 @@ const BrandShowcase = () => {
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="text-center space-y-4">
                         <div className="w-24 h-24 bg-white/10 rounded-full backdrop-blur-md flex items-center justify-center">
-                          <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-coral-400 rounded-full"></div>
+                          <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-plum-400 rounded-full"></div>
                         </div>
                       </div>
                     </div>

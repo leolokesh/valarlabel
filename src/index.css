@@ -16,7 +16,7 @@
     --popover: 20 20 20;
     --popover-foreground: 255 255 255;
 
-    --primary: 20 184 166;
+    --primary: 168 85 247;
     --primary-foreground: 255 255 255;
 
     --secondary: 39 39 42;
@@ -33,18 +33,18 @@
 
     --border: 39 39 42;
     --input: 39 39 42;
-    --ring: 20 184 166;
+    --ring: 168 85 247;
 
     --radius: 0.5rem;
 
     --sidebar-background: 15 15 15;
     --sidebar-foreground: 255 255 255;
-    --sidebar-primary: 20 184 166;
+    --sidebar-primary: 168 85 247;
     --sidebar-primary-foreground: 255 255 255;
     --sidebar-accent: 39 39 42;
     --sidebar-accent-foreground: 255 255 255;
     --sidebar-border: 39 39 42;
-    --sidebar-ring: 20 184 166;
+    --sidebar-ring: 168 85 247;
   }
 }
 
@@ -61,7 +61,7 @@
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-teal-400 to-coral-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-purple-400 to-plum-400 bg-clip-text text-transparent;
   }
   
   .hero-gradient {
@@ -69,6 +69,6 @@
   }
   
   .card-hover {
-    @apply transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-500/20;
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20;
   }
 }
