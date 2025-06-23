@@ -1,93 +1,71 @@
 
 import { useState } from 'react';
-import { Menu, X, Search, ShoppingBag, User } from 'lucide-react';
+import { Menu, X, Search, ShoppingBag, User, MoreHorizontal } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navItems = [
-    { name: 'New', href: '#' },
-    { name: 'Kurtas', href: '#' },
-    { name: 'Sarees', href: '#' },
-    { name: 'Lehengas', href: '#' },
-    { name: 'Indo-Western', href: '#' },
-    { name: 'Sale', href: '#' }
-  ];
-
   return (
-    <nav className="fixed top-6 left-6 right-6 z-50 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+    <nav className="fixed top-8 left-8 right-8 z-50">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-white">ValarLabel</h1>
+            <h1 className="text-3xl font-bold tracking-wider text-white drop-shadow-lg">VOGUE</h1>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
-              {navItems.map(item => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-white/90 hover:text-white px-3 py-2 text-sm font-medium transition-all duration-200 relative group"
-                >
-                  {item.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-400 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-              ))}
+          {/* Right side - More icon and Menu */}
+          <div className="flex items-center space-x-6">
+            <Button variant="ghost" size="icon" className="text-white/80 hover:text-white hover:bg-white/10">
+              <MoreHorizontal className="h-6 w-6" />
+            </Button>
+            
+            <div className="flex items-center space-x-3">
+              <span className="text-white/80 font-medium tracking-wide text-sm">MENU</span>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="text-white/80 hover:text-white hover:bg-white/10"
+              >
+                {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              </Button>
             </div>
-          </div>
-
-          {/* Right side icons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="icon" className="text-white/90 hover:text-white hover:bg-white/10">
-              <Search className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="text-white/90 hover:text-white hover:bg-white/10">
-              <User className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="text-white/90 hover:text-white hover:bg-white/10">
-              <ShoppingBag className="h-5 w-5" />
-            </Button>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white/90 hover:text-white hover:bg-white/10"
-            >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
           </div>
         </div>
 
-        {/* Mobile menu */}
+        {/* Mobile/Desktop menu overlay */}
         {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white/5 backdrop-blur-md rounded-b-2xl border-t border-white/10">
-              {navItems.map(item => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-white/90 hover:text-white block px-3 py-2 text-base font-medium transition-colors duration-200"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </a>
-              ))}
-              <div className="flex items-center space-x-4 px-3 py-2 border-t border-white/10 mt-4 pt-4">
-                <Button variant="ghost" size="icon" className="text-white/90 hover:text-white hover:bg-white/10">
+          <div className="absolute top-16 right-0 w-80 bg-white/95 backdrop-blur-md rounded-lg shadow-2xl border border-white/20 p-6">
+            <div className="space-y-4">
+              <a href="#" className="block text-stone-800 hover:text-stone-600 text-lg font-medium transition-colors duration-200">
+                New
+              </a>
+              <a href="#" className="block text-stone-800 hover:text-stone-600 text-lg font-medium transition-colors duration-200">
+                Kurtas
+              </a>
+              <a href="#" className="block text-stone-800 hover:text-stone-600 text-lg font-medium transition-colors duration-200">
+                Sarees
+              </a>
+              <a href="#" className="block text-stone-800 hover:text-stone-600 text-lg font-medium transition-colors duration-200">
+                Lehengas
+              </a>
+              <a href="#" className="block text-stone-800 hover:text-stone-600 text-lg font-medium transition-colors duration-200">
+                Indo-Western
+              </a>
+              <a href="#" className="block text-stone-800 hover:text-stone-600 text-lg font-medium transition-colors duration-200">
+                Sale
+              </a>
+              
+              <div className="flex items-center space-x-4 pt-4 border-t border-stone-200">
+                <Button variant="ghost" size="icon" className="text-stone-600 hover:text-stone-800">
                   <Search className="h-5 w-5" />
                 </Button>
-                <Button variant="ghost" size="icon" className="text-white/90 hover:text-white hover:bg-white/10">
+                <Button variant="ghost" size="icon" className="text-stone-600 hover:text-stone-800">
                   <User className="h-5 w-5" />
                 </Button>
-                <Button variant="ghost" size="icon" className="text-white/90 hover:text-white hover:bg-white/10">
+                <Button variant="ghost" size="icon" className="text-stone-600 hover:text-stone-800">
                   <ShoppingBag className="h-5 w-5" />
                 </Button>
               </div>
