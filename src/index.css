@@ -71,4 +71,26 @@
   .card-hover {
     @apply transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20;
   }
+
+  /* Editorial Typography */
+  .editorial-headline {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 0.9;
+  }
+  
+  .editorial-body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+  }
+  
+  .editorial-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
 }
