@@ -5,23 +5,23 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: Palette,
-      title: "Design Philosophy",
-      description: "Where art meets fashion, creating wearable masterpieces that tell your story"
+      title: "From Our Land, For Her World",
+      description: "Made in India, for the world — supporting local artisans and redefining fusion wear on a global stage."
     },
     {
       icon: Users,
       title: "Community Driven",
-      description: "Built by women, for women - celebrating every journey, every dream"
+      description: "For women, by vision — building a future powered by her"
     },
     {
       icon: Award,
-      title: "Award Winning",
-      description: "Recognized globally for innovation in fusion fashion and sustainable practices"
+      title: "Versatile by Design",
+      description: "From Monday meetings to weekend brunches — one piece, multiple moods. Because your wardrobe should work as hard as you do"
     },
     {
       icon: Zap,
-      title: "Future Forward",
-      description: "Pioneering tomorrow's fashion today with cutting-edge design and technology"
+      title: "Designed with Intent",
+      description: "Not just beautiful — every cut, curve, and contour serves comfort, grace, and ease of wear"
     }
   ];
 
@@ -32,14 +32,14 @@ const FeaturesSection = () => {
         <div className="text-center mb-20 animate-fade-in">
           <div className="flex items-center justify-center space-x-3 mb-6">
             <div className="w-12 h-0.5 bg-gradient-to-r from-purple-400 to-plum-400"></div>
-            <span className="text-purple-400 font-medium tracking-wider">WHY AURA</span>
+            <span className="text-purple-400 font-medium tracking-wider">VALARLABEL</span>
             <div className="w-12 h-0.5 bg-gradient-to-r from-plum-400 to-purple-400"></div>
           </div>
           <h2 className="text-5xl lg:text-6xl font-bold mb-6">
             Beyond <span className="gradient-text">Fashion</span>
           </h2>
           <p className="text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed">
-            We're not just creating clothes. We're crafting experiences, building confidence, 
+            We're not just creating clothes. We're crafting experiences 
             and celebrating the multifaceted nature of modern womanhood.
           </p>
         </div>

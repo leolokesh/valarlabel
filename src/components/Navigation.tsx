@@ -7,14 +7,14 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-4 left-4 right-4 z-50">
+    <nav className="fixed top-12 left-4 right-4 z-50">
       <div className="max-w-7xl mx-auto">
         {/* Main Navigation Bar */}
         <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 shadow-lg">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold tracking-[0.2em] text-white drop-shadow-lg">VOGUE</h1>
+              <h1 className="text-2xl font-bold tracking-[0.2em] text-white drop-shadow-lg">VALARLABEL</h1>
             </div>
 
             {/* Right side - More icon and Menu */}

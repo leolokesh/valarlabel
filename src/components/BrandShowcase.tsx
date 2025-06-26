@@ -1,4 +1,3 @@
-
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -6,18 +5,18 @@ const BrandShowcase = () => {
   const collections = [
     {
       id: 1,
-      title: "Heritage Redefined",
-      subtitle: "Where tradition meets tomorrow",
-      description: "Ancient weaving techniques reimagined for the contemporary woman who honors her roots while embracing the future.",
-      image: "bg-gradient-to-br from-purple-600/40 to-plum-600/40",
+      title: "Urban Elegance",
+      subtitle: "City lights, timeless nights",
+      description: "For the woman who navigates boardrooms by day and art galleries by night. Sophistication with an edge- tailored silhouettes, sleek lines, and cultural undertones",
+      image: "bg-gradient-to-br from-plum-600/40 to-purple-600/40",
       year: "2024"
     },
     {
       id: 2,
-      title: "Urban Elegance",
-      subtitle: "City lights, timeless nights",
-      description: "For the woman who navigates boardrooms by day and art galleries by night. Sophistication with an edge.",
-      image: "bg-gradient-to-br from-plum-600/40 to-purple-600/40",
+      title: "Heritage Redefined",
+      subtitle: "Where tradition meets tomorrow",
+      description: "Comfort-first fusion wear for the everyday minimalist. Light fabrics, heritage prints, and relaxed fits — rooted in culture, built for life.",
+      image: "bg-gradient-to-br from-purple-600/40 to-plum-600/40",
       year: "2024"
     },
     {
@@ -88,8 +87,14 @@ const BrandShowcase = () => {
                   variant="ghost" 
                   className="text-white hover:text-purple-400 px-0 text-lg group"
                 >
-                  EXPLORE COLLECTION
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  {collection.id === 1 ? (
+                    <>
+                      EXPLORE COLLECTION
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </>
+                  ) : (
+                    <span className="text-gray-400">COMING SOON</span>
+                  )}
                 </Button>
               </div>
 

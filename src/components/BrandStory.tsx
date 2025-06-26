@@ -1,18 +1,5 @@
 import { Heart, Sparkles, Globe } from 'lucide-react';
 const BrandStory = () => {
-  const values = [{
-    icon: Heart,
-    title: "Crafted with Purpose",
-    description: "Every piece is born from passion, designed with intention, and created to empower the modern woman."
-  }, {
-    icon: Sparkles,
-    title: "Innovation in Tradition",
-    description: "We honor age-old techniques while pushing boundaries, creating tomorrow's classics today."
-  }, {
-    icon: Globe,
-    title: "Global Inspiration",
-    description: "Drawing from cultures worldwide, we create universal beauty that transcends borders."
-  }];
   return <section className="py-32 bg-gradient-to-b from-black to-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Story */}
@@ -24,16 +11,14 @@ const BrandStory = () => {
                 <span className="text-purple-400 font-medium tracking-wider">OUR STORY</span>
               </div>
               
-              <h2 className="text-5xl text-white leading-tight font-bold lg:text-6xl">
-                Born from a
+              <h2 className="text-4xl text-white leading-tight font-bold lg:text-5xl">
+                Redefining elegance 
                 <br />
-                <span className="gradient-text text-center text-5xl">modern women</span>
+                <span className="gradient-text text-center text-5xl">for the modern women</span>
               </h2>
               
               <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
-                <p>Redefining elegance for the modern woman</p>
                 <p>Our women’s fusion wear brings together the beauty of cultural heritage and modern style. Each piece is made to help you feel confident and stand out—combining comfort, elegance, and versatility for your busy day.</p>
-                <p>Our collection is here to help you own your style and tell your story, every day.Today, AURA stands as a testament to the power of fusion – not just in fashion, but in life itself.</p>
               </div>
             </div>
           </div>
@@ -59,22 +44,6 @@ const BrandStory = () => {
             }}></div>
             </div>
           </div>
-        </div>
-
-        {/* Values */}
-        <div className="grid md:grid-cols-3 gap-12">
-          {values.map((value, index) => {
-          const Icon = value.icon;
-          return <div key={index} className="text-center space-y-6 animate-fade-in" style={{
-            animationDelay: `${index * 0.2}s`
-          }}>
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-purple-500/20 to-plum-500/20 rounded-full">
-                  <Icon className="h-10 w-10 text-purple-400" />
-                </div>
-                <h3 className="text-2xl font-bold text-white">{value.title}</h3>
-                <p className="text-gray-400 leading-relaxed">{value.description}</p>
-              </div>;
-        })}
         </div>
       </div>
     </section>;
