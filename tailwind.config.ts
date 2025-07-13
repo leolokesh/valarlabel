@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -19,6 +18,12 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'serif': ['Georgia', 'Times New Roman', 'serif'],
+				'elegant': ['Playfair Display', 'Georgia', 'Times New Roman', 'serif'],
+				'body': ['Crimson Text', 'Georgia', 'Times New Roman', 'serif'],
+				'sans': ['Georgia', 'Times New Roman', 'serif'], // Override default sans to use serif
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -64,10 +69,14 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				// Custom colors for fusion wear theme - Purple and Plum
+				theme: {
+					dark: '#181E22',
+					plum: '#e9d5ff',
+				},
 				purple: {
 					50: '#faf5ff',
 					100: '#f3e8ff',
-					200: '#e9d5ff',
+					200: '#e9d5ff', // plum
 					300: '#d8b4fe',
 					400: '#c084fc',
 					500: '#a855f7',
@@ -79,7 +88,7 @@ export default {
 				plum: {
 					50: '#fdf4ff',
 					100: '#fae8ff',
-					200: '#f5d0fe',
+					200: '#e9d5ff',
 					300: '#f0abfc',
 					400: '#e879f9',
 					500: '#d946ef',
@@ -87,6 +96,7 @@ export default {
 					700: '#a21caf',
 					800: '#86198f',
 					900: '#701a75',
+					DEFAULT: '#e9d5ff',
 				}
 			},
 			borderRadius: {

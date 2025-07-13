@@ -1,4 +1,3 @@
-
 import { Palette, Users, Award, Zap } from 'lucide-react';
 
 const FeaturesSection = () => {
@@ -26,7 +25,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-b from-gray-900 to-black">
+    <section className="py-32 bg-theme-dark text-theme-plum">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-20 animate-fade-in">

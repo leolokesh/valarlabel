@@ -1,6 +1,6 @@
 import { Heart, Sparkles, Globe } from 'lucide-react';
 const BrandStory = () => {
-  return <section className="py-32 bg-gradient-to-b from-black to-gray-900">
+  return <section className="py-32 bg-theme-dark text-theme-plum">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Story */}
         <div className="grid lg:grid-cols-2 gap-20 items-center mb-32">

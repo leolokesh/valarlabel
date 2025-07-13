@@ -6,18 +6,22 @@ import BrandShowcase from '@/components/BrandShowcase';
 import ConfidenceSection from '@/components/ConfidenceSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import Footer from '@/components/Footer';
+import FashionSpread from '@/components/fashionspread';
+import Beyondfashion from '@/components/beyondfashion';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-black text-white relative">
+    <div className="min-h-screen bg-black text-white relative overflow-x-hidden">
       <Navigation />
       <div className="pt-0">
         <HeroSection />
-        <BrandStory />
+        {/* <BrandStory /> */}
+        <FashionSpread/>
         <SizingSection />
         <ConfidenceSection />
         <BrandShowcase />
-        <FeaturesSection />
+        {/* <FeaturesSection /> */}
+        <Beyondfashion/>
         <Footer />
       </div>
     </div>

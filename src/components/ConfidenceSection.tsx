@@ -1,54 +1,74 @@
-import React from 'react';
+import React from "react";
 
 const ConfidenceSection = () => {
-return (
-    <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center mb-14">
-          <div className="hidden sm:block w-24 h-1 bg-purple-400 rounded-full mr-4" />
-          <h2 className="text-2xl lg:text-3xl font-extrabold text-purple-300 tracking-widest text-center font-sans mx-2">
-            MORE THAN WHAT YOU WEAR
-          </h2>
-          <div className="hidden sm:block w-24 h-1 bg-purple-400 rounded-full ml-4" />
+  return (
+    <section className="relative w-full min-h-[70vh] h-[90vh] sm:min-h-screen sm:h-[140vh] bg-theme-dark text-theme-plum overflow-hidden flex items-center justify-center px-4 sm:px-6">
+      {/* Subtle Gradient Background */}
+      <div className="absolute left-0 top-0 w-1/2 h-full bg-gradient-to-r from-[#3B0D60] to-transparent z-0" />
+
+      {/* Headline Text - Mobile centered, desktop original */}
+      <div className="sm:hidden absolute inset-0 flex flex-col items-center justify-center z-10 text-white px-2 w-full max-w-4xl mx-auto">
+        <h2 className="text-xl text-center font-light tracking-wide leading-tight">
+          MORE THAN WHAT YOU WEAR <br />
+          <span className="text-sm tracking-widest font-light text-[#C084FC]">of</span> <br />
+          <span className="text-6xl font-semibold">OPULENCE</span>
+        </h2>
+      </div>
+      <div className="hidden sm:block absolute text-center top-[15%] sm:top-[18%] md:top-[20%] z-10 text-white px-2 left-1/2 transform -translate-x-1/2 w-full max-w-4xl">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-light tracking-wide leading-tight">
+          MORE THAN WHAT YOU WEAR <br />
+          <span className="text-xs sm:text-sm md:text-base lg:text-lg tracking-widest font-light text-[#C084FC]">of</span> <br />
+          <span className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-[120px] 2xl:text-[200px] font-semibold">OPULENCE</span>
+        </h2>
+      </div>
+
+      {/* Mobile: Centered image */}
+      <div className="relative h-[120vh] w-full">
+        <div className="sm:hidden absolute inset-0 flex items-center justify-center z-10">
+          <img
+            src="/opulence.png"
+            alt="Model"
+            className="w-[700px] max-w-[145vw] object-contain"
+          />
         </div>
-            <div className="grid md:grid-cols-2 gap-12">
-                {/* Left Card */}
-                <div className="flex flex-col justify-end min-h-[320px] relative rounded-3xl overflow-hidden shadow-lg bg-gradient-to-b from-white/10 to-purple-400/10">
-                    <img
-                        src="/girl-sari.jpg"
-                        alt="Confident woman in fusion wear"
-                        className="absolute top-0 left-0 w-full h-full object-cover object-left opacity-30 pointer-events-none select-none"
-                    />
-                    <div className="relative z-10 p-10 mt-auto">
-                        <h3 className="text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg font-serif">
-                            Confidence in Every Stitch
-                        </h3>
-                        <p className="text-gray-300 text-lg leading-relaxed font-light drop-shadow-md max-w-lg">
-                            Our fusion wear is more than clothing; it's a statement of her self-assurance, woven into every seam and detail.
-                        </p>
-                    </div>
-                </div>
-                {/* Right Card */}
-                <div className="flex flex-col justify-end min-h-[320px] relative rounded-3xl overflow-hidden shadow-lg bg-gradient-to-b from-white/10 to-purple-400/10">
-                    <img
-                        src="/girl-sari1.png"
-                        alt="Effortless All-Day Elegance"
-                        className="absolute top-0 left-0 w-full h-full object-cover object-left opacity-30 pointer-events-none select-none"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-purple-700/70 to-transparent" />
-                    <div className="relative z-10 p-10 mt-auto">
-                        <h3 className="text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg font-serif">
-                            Effortless All-Day Elegance
-                        </h3>
-                        <p className="text-gray-300 text-lg leading-relaxed font-light drop-shadow-md max-w-lg">
-                            From morning meetings to evening celebrations, Valarlabel keeps her comfortable, elegant, and inspired.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div className="hidden sm:block absolute z-10 top-[-20px] sm:top-[-30px] md:top-[-50px] lg:top-[-70px] left-[20px] sm:left-[50px] md:left-[100px] lg:left-[200px]">
+          <img
+            src="/opulence.png"
+            alt="Model"
+            className="w-[250px] md:w-[400px] lg:w-[600px] xl:w-[800px] 2xl:w-[1000px] object-contain"
+          />
         </div>
+      </div>
+
+      {/* Mobile: Top Confidence, Bottom Effortless, both centered */}
+      <div className="sm:hidden absolute top-4 left-1/2 transform -translate-x-1/2 w-[90%] max-w-xs z-20 text-center text-white">
+        <h3 className="text-base font-bold text-[#C084FC]">Confidence in Every Stitch</h3>
+        <p className="text-sm text-[#A1A1AA] mt-2 leading-relaxed">
+          Our fusion wear is more than clothing; it's a statement of her self-assurance, woven into every seam and detail.
+        </p>
+      </div>
+      <div className="sm:hidden absolute bottom-4 left-1/2 transform -translate-x-1/2 w-[90%] max-w-xs z-20 text-center text-white">
+        <h3 className="text-base font-bold text-[#C084FC]">Effortless All-Day Elegance</h3>
+        <p className="text-sm text-[#A1A1AA] mt-2 leading-relaxed">
+          From morning meetings to evening celebrations, Valarlabel keeps her comfortable, elegant, and inspired.
+        </p>
+      </div>
+
+      {/* Desktop: original left/right layout */}
+      <div className="hidden sm:block absolute left-4 md:left-6 lg:left-10 bottom-8 md:bottom-10 w-[240px] md:w-[280px] lg:w-[300px] z-20 text-left text-white">
+        <h3 className="text-base md:text-lg lg:text-xl font-bold text-[#C084FC]">Confidence in Every Stitch</h3>
+        <p className="text-sm md:text-base text-[#A1A1AA] mt-2 leading-relaxed">
+          Our fusion wear is more than clothing; it's a statement of her self-assurance, woven into every seam and detail.
+        </p>
+      </div>
+      <div className="hidden sm:block absolute right-4 md:right-6 lg:right-10 bottom-8 md:bottom-10 w-[240px] md:w-[280px] lg:w-[300px] z-20 text-right text-white">
+        <h3 className="text-base md:text-lg lg:text-xl font-bold text-[#C084FC]">Effortless All-Day Elegance</h3>
+        <p className="text-sm md:text-base text-[#A1A1AA] mt-2 leading-relaxed">
+          From morning meetings to evening celebrations, Valarlabel keeps her comfortable, elegant, and inspired.
+        </p>
+      </div>
     </section>
-);
+  );
 };
 
 export default ConfidenceSection;

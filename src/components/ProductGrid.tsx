@@ -1,6 +1,11 @@
-
 import { Heart, ShoppingCart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { motion, easeInOut } from 'framer-motion';
+
+const sectionVariants = {
+  hidden: { opacity: 0, y: 60, scale: 0.98 },
+  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1, ease: easeInOut } },
+};
 
 const ProductGrid = () => {
   const products = [
@@ -39,7 +44,13 @@ const ProductGrid = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-black to-gray-900">
+    <motion.section
+      className="py-20 bg-theme-dark text-theme-plum"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={sectionVariants}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
@@ -116,7 +127,7 @@ const ProductGrid = () => {
           </Button>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
