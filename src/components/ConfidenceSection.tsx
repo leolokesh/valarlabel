@@ -14,11 +14,11 @@ const ConfidenceSection = () => {
           <span className="text-6xl font-semibold">OPULENCE</span>
         </h2>
       </div>
-      <div className="hidden sm:block absolute text-center top-[15%] sm:top-[18%] md:top-[20%] z-10 text-white px-2 left-1/2 transform -translate-x-1/2 w-full max-w-4xl">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-light tracking-wide leading-tight">
+     <div className="hidden sm:flex absolute top-[15%] sm:top-[18%] md:top-[20%] left-[45%] transform -translate-x-[45%] z-10 text-white px-2 w-full max-w-4xl items-center justify-center">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-light tracking-wide leading-tight text-center w-full">
           MORE THAN WHAT YOU WEAR <br />
-          <span className="text-xs sm:text-sm md:text-base lg:text-lg tracking-widest font-light text-[#C084FC]">of</span> <br />
-          <span className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-[120px] 2xl:text-[200px] font-semibold">OPULENCE</span>
+          {/* <span className="text-xs sm:text-sm md:text-base lg:text-lg tracking-widest font-light text-[#C084FC]">of</span> <br /> */}
+          <span className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-[120px] 2xl:text-[250px] font-semibold relative left-[-20vw]">OPULENCE</span>
         </h2>
       </div>
 
@@ -26,16 +26,16 @@ const ConfidenceSection = () => {
       <div className="relative h-[120vh] w-full">
         <div className="sm:hidden absolute inset-0 flex items-center justify-center z-10">
           <img
-            src="/opulence.png"
+            src="/opulence1.png"
             alt="Model"
             className="w-[700px] max-w-[145vw] object-contain"
           />
         </div>
         <div className="hidden sm:block absolute z-10 top-[-20px] sm:top-[-30px] md:top-[-50px] lg:top-[-70px] left-[20px] sm:left-[50px] md:left-[100px] lg:left-[200px]">
           <img
-            src="/opulence.png"
+            src="/opulence1.png"
             alt="Model"
-            className="w-[250px] md:w-[400px] lg:w-[600px] xl:w-[800px] 2xl:w-[1000px] object-contain"
+            className="w-[400px] md:w-[1100px] lg:w-[1300px] xl:w-[1400px] 2xl:w-[1600px] object-contain"
           />
         </div>
       </div>
@@ -72,3 +72,78 @@ const ConfidenceSection = () => {
 };
 
 export default ConfidenceSection;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
