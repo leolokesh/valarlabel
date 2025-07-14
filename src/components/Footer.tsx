@@ -106,14 +106,14 @@ const Footer = () => {
                 </form>
               </div>  
               <div className="space-y-2 text-xs sm:text-sm text-gray-400 w-full max-w-xs">
-                <div className="flex items-center space-x-2 justify-center lg:justify-end">
+                {/* <div className="flex items-center space-x-2 justify-center lg:justify-end">
                   <Phone className="h-3 w-3 sm:h-4 sm:w-4" />
                   <span>+91 98765 43210</span>
                 </div>
                 <div className="flex items-center space-x-2 justify-center lg:justify-end">
                   <Mail className="h-3 w-3 sm:h-4 sm:w-4" />
                   <span className="text-xs">customercare@valarlabel.com</span>
-                </div>
+                </div> */}
                 <div className="flex items-center space-x-2 justify-center lg:justify-end">
                   <MapPin className="h-3 w-3 sm:h-4 sm:w-4" />
                   <span>Coimbatore, India</span>
